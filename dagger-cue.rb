@@ -5,20 +5,20 @@
 class DaggerCue < Formula
   desc "Dagger is a programmable deployment system."
   homepage "https://github.com/dagger/dagger"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger-cue/releases/0.1.0/dagger-cue_0.1.0_darwin_amd64.tar.gz"
-      sha256 "4ec9421feca1dde16cf07486b41a6f23516e1f3bee4a7cf94f13a289fe94721b"
+      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger-cue/releases/0.1.1/dagger-cue_v0.1.1_darwin_amd64.tar.gz"
+      sha256 "ce1e8d51ae1e49d58196adcf865c940099beb5062215a6d3ab3cc15add8ed6b8"
 
       def install
         bin.install "dagger-cue"
       end
     end
     if Hardware::CPU.arm?
-      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger-cue/releases/0.1.0/dagger-cue_0.1.0_darwin_arm64.tar.gz"
-      sha256 "626b5a34ecf5c102a6abe71d3a61a7f33d04b69c8662988f5742d984d326e679"
+      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger-cue/releases/0.1.1/dagger-cue_v0.1.1_darwin_arm64.tar.gz"
+      sha256 "7dfb964f65eba497192d9ea9cfd468123a6b7b52e7e5beb86eae742bf58254a8"
 
       def install
         bin.install "dagger-cue"
@@ -28,16 +28,16 @@ class DaggerCue < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger-cue/releases/0.1.0/dagger-cue_0.1.0_linux_arm64.tar.gz"
-      sha256 "391a36cb40dbe0b7dde7dc024b790d2e3d5f4ca8d3cae505ae20eea3e3109c94"
+      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger-cue/releases/0.1.1/dagger-cue_v0.1.1_linux_arm64.tar.gz"
+      sha256 "da240ff201305dbcef0a0f081195986eb17b4fc7a6d5401f58e91712f4ac3aed"
 
       def install
         bin.install "dagger-cue"
       end
     end
     if Hardware::CPU.intel?
-      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger-cue/releases/0.1.0/dagger-cue_0.1.0_linux_amd64.tar.gz"
-      sha256 "7ed499ed9a1468748bfb9b71ca78790ff2e2390eaf1f4b0be863eaa64c3c96c8"
+      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger-cue/releases/0.1.1/dagger-cue_v0.1.1_linux_amd64.tar.gz"
+      sha256 "43625535da3d5b696f774b55ebc9efd8dfa3558e61a12e049e06157b70c03c5c"
 
       def install
         bin.install "dagger-cue"
