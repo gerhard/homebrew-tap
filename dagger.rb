@@ -5,20 +5,20 @@
 class Dagger < Formula
   desc "Dagger is a programmable deployment system."
   homepage "https://github.com/dagger/dagger"
-  version "0.3.6-alpha.2"
+  version "0.6.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger/releases/0.3.6-alpha.2/dagger_v0.3.6-alpha.2_darwin_amd64.tar.gz"
-      sha256 "a5016000d0e5404efe397c3f4532698f0f7a6ee68d550a6f091fb1d84b9b85c1"
+      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger/releases/0.6.4/dagger_v0.6.4_darwin_amd64.tar.gz"
+      sha256 "ad3db4dcc205a7cac9ad646baf4ae136d38897436c07cec5fc9aa567bd471bff"
 
       def install
         bin.install "dagger"
       end
     end
     if Hardware::CPU.arm?
-      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger/releases/0.3.6-alpha.2/dagger_v0.3.6-alpha.2_darwin_arm64.tar.gz"
-      sha256 "a9b7b0fea5fd1d7f37f4f42cd87a2672c90c001e6b71dfb1feb64f8ff18f76c5"
+      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger/releases/0.6.4/dagger_v0.6.4_darwin_arm64.tar.gz"
+      sha256 "109fe2a59c6b4fd604e6d806f0db84910ffdb265fc56c212518e5d4d2f72ea54"
 
       def install
         bin.install "dagger"
@@ -28,16 +28,16 @@ class Dagger < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger/releases/0.3.6-alpha.2/dagger_v0.3.6-alpha.2_linux_arm64.tar.gz"
-      sha256 "d09a7696606111e4d1bb2644f9329b8671a9993f6786d79ae1a8bcb8bf689eb0"
+      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger/releases/0.6.4/dagger_v0.6.4_linux_arm64.tar.gz"
+      sha256 "b58d3948f42c1870b30d8fe64667bdda2b14687a8f9fc6f75addb8263ae799d0"
 
       def install
         bin.install "dagger"
       end
     end
     if Hardware::CPU.intel?
-      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger/releases/0.3.6-alpha.2/dagger_v0.3.6-alpha.2_linux_amd64.tar.gz"
-      sha256 "d654343ecb2b76259204a7162b6e93ac72639bce8fd85de7de0a68261d652a4e"
+      url "https://gerhard-dagger.s3.eu-west-1.amazonaws.com/dagger/releases/0.6.4/dagger_v0.6.4_linux_amd64.tar.gz"
+      sha256 "679a2aafb5782897c6597af5442ab06b44eb178accdf29c2928511c1afcd19b6"
 
       def install
         bin.install "dagger"
